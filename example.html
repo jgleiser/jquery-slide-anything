@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width">
+    <title>jQuery slide anything</title>
+    <meta name="description" content="Example page for jQuery slide anything plugin">
+    <link rel="stylesheet" href="styles/jsa.css">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Example page for jQuery slide anything plugin</h1>
+
+      <div class="jsa-wrapper">
+
+        <div class="jsa-slider-content active">
+          <div id="content1">
+            <h2>First content</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec
+              enim vel sem condimentum vestibulum luctus non est. In dui leo,
+              convallis a orci eget, interdum vehicula libero. Vivamus ut semper
+              est. Quisque quis consectetur tortor. Aenean tempor mattis augue
+              ac condimentum. In semper odio non vestibulum euismod.
+            </p>
+            <p>
+              Fusce quam felis, luctus condimentum augue volutpat, sollicitudin
+              dignissim lectus. Curabitur et justo vitae enim semper congue.
+              Quisque nec felis ut velit varius dapibus. Donec eget pretium
+              lectus. Suspendisse id iaculis arcu, sed iaculis mauris. Nam
+              varius eget lacus eget vulputate.
+            </p>
+          </div>
+        </div>
+
+        <div class="jsa-slider-content">
+          <div id="content2">
+            <h2>Second content</h2>
+            <h3>Sports!</h3>
+            <p>
+              <img src="http://lorempixel.com/400/200/sports/" width="400" height="200">
+            </p>
+          </div>
+        </div>
+
+        <div class="jsa-slider-content">
+          <div id="content3">
+            <h2>Third content</h2>
+            <h3>City!</h3>
+            <p>
+              <img src="http://lorempixel.com/400/200/city/" width="400" height="200">
+            </p>
+          </div>
+        </div>
+        
+        <div class="jsa-controls">
+          <p>
+            <a href="#content1">
+              <i class="icon-change-slide active"></i>
+            </a>
+            <a href="#content2">
+              <i class="icon-change-slide"></i>
+            </a>
+            <a href="#content3">
+              <i class="icon-change-slide"></i>
+            </a>
+          </p>
+        </div>
+
+      </div>
+      
+      <hr>
+      
+      <h2>HTML Markup</h2>
+<pre class="prettyprint lang-html">
+  &lt;div class="jsa-wrapper"&gt;
+
+    &lt;div class="jsa-slider-content active"&gt;
+      &lt;div id="content1"&gt;
+        <b>any html content 1</b>
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="jsa-slider-content"&gt;
+      &lt;div id="content2"&gt;
+        <b>any html content 2</b>
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="jsa-slider-content"&gt;
+      &lt;div id="content3"&gt;
+        <b>any html content 3</b>
+      &lt;/div&gt;
+    &lt;/div&gt;
+  
+  
+    &lt;div class="jsa-controls"&gt;
+      &lt;p&gt;
+        &lt;a href="#content1"&gt;
+          &lt;i class="icon-change-slide active"&gt;&lt;/i&gt;
+        &lt;/a&gt;
+        &lt;a href="#content2"&gt;
+          &lt;i class="icon-change-slide"&gt;&lt;/i&gt;
+        &lt;/a&gt;
+        &lt;a href="#content3"&gt;
+          &lt;i class="icon-change-slide"&gt;&lt;/i&gt;
+        &lt;/a&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+</pre>
+      
+      <h2>Run script</h2>
+<pre class="prettyprint">
+  &lt;script&gt;
+    $(".jsa-wrapper").slideAnything();
+  &lt;/script&gt;
+</pre>
+      <h3>Options</h3>
+<pre class="prettyprint">
+  &lt;script&gt;
+    $(".jsa-wrapper").slideAnything({
+      timerSpeed: 2000, // time to wait for next slide
+      toggleSpeed: 300, // time for toggleClass animation
+    });
+  &lt;/script&gt;
+
+  <span class="nocode">Note: always keep timerSpeed higher than toggleSpeed</span>
+</pre>
+
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="ext/js/jquery-ui-1.10.3.effects.min.js"></script>
+    <script src="js/jquery.slideAnything.js"></script>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <script>
+      $(".jsa-wrapper").slideAnything({
+        timerSpeed: 2000,
+        toggleSpeed: 300,
+      });
+    </script>
+  </body>
+</html>

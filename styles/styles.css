@@ -1,0 +1,36 @@
+body {
+	font-size: 100%;
+}
+.wrap {
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+#content1 {
+	background-color: Tan;
+	color: Blue;
+}
+#content1 p {
+	text-align: left;
+}
+#content2 {
+	background-color: Pink;
+	color: Green;
+}
+#content3 {
+	background-color: CadetBlue;
+	color: WhiteSmoke;
+}
+h2 {
+	margin-top: 0;
+	padding-top: 1em;
+}
+pre {
+	text-align: left;
+}
+.jsa-wrapper {
+	height: 400px;
+}
+.jsa-slider-content > div {
+	height: inherit;
+}
